@@ -15,6 +15,5 @@ class PostViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
   permission_classes = [IsAdminUser]
   queryset = get_user_model().objects.all()
-  serializer_class = UserSerializer 
-
-
+  serializer_class = UserSerializer
+  
